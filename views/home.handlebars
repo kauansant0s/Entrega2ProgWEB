@@ -1,0 +1,14 @@
+<h1>Lista de times: </h1>
+<a href= "/cadastrar-time"><button>Cadastrar time</button></a><br>
+<hr>
+{{#each times}}
+    <p>Nome do time: {{dataValues.nomeTime}}</p>
+    <p>Estado: {{dataValues.estado}}</p>
+    <p>Cidade: {{dataValues.cidade}}</p>
+    <p>Número de jogadores: {{dataValues.numJog}}</p>
+    <p>Email: {{dataValues.email}}</p>
+    <p>Data de inscrição: {{#formatDate dataValues.createAt}}{{/formatDate}}</p>
+    <a href= "/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    <a href= "/editar/{{dataValues.id}}"><button>Editar</button></a>
+    <hr>
+{{/each}}

@@ -1,0 +1,18 @@
+{
+  "name": "trabalho2",
+  "version": "1.0.0",
+  "description": "Parte dois do trabalho de programação WEB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kauan Santos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.5",
+    "moment": "^2.29.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.9.0"
+  }
+}
